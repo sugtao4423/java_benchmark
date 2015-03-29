@@ -9,7 +9,6 @@ public class MainActivity {
 	static int startDATE[] = new int[3];
 	static int endDATE[] = new int[3];
 	static int ansDATE[] = new int[3];
-	static String coron = ":";
 	
 	public static void main(String[] args){
 		if(args.length != 1)
@@ -21,7 +20,7 @@ public class MainActivity {
 		startDATE[0] = cal.get(Calendar.MINUTE);
 		startDATE[1] = cal.get(Calendar.SECOND);
 		startDATE[2] = cal.get(Calendar.MILLISECOND);
-		System.out.println("start：" + startDATE[0] + coron + startDATE[1] + "," + startDATE[2]);
+		System.out.println("start：" + startDATE[0] + ":" + startDATE[1] + "," + startDATE[2]);
 		
 		while(While){
 		for(int i = 0; i < 10; ++i)
@@ -50,7 +49,7 @@ public class MainActivity {
 		ansDATE[1] = cal2.get(Calendar.SECOND);
 		ansDATE[2] = cal2.get(Calendar.MILLISECOND);
 		
-		System.out.println("end：" + endDATE[0] + coron + endDATE[1] + "," + endDATE[2]);
-		System.out.println("margin：" + ansDATE[0] + coron + ansDATE[1] + "," + ansDATE[2]);
+		System.out.println("end：" + endDATE[0] + ":" + endDATE[1] + "," + endDATE[2]);
+		System.out.println("margin：" + ansDATE[0] + ":" + ansDATE[1] + "," + ansDATE[2]);
 	}
 }
